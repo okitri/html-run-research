@@ -858,6 +858,9 @@ a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:h
 .sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
   background-color: #3373ba;
 }
+body:not(.layout-fixed) .main-sidebar .sidebar {
+  overflow-y: unset;
+}
 
 /* card */
 .card {
