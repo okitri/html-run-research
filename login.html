@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in | RUN Market Buyer</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- Custom style -->
+  <link rel="stylesheet" href="dist/css/runstyle.css">
+</head>
+<body class="hold-transition login-page">
+<div class="login-box">
+  <!-- /.login-logo -->
+  <div class="card">
+    <div class="card-body login-card-body">
+      <div class="login-logo">
+        <a href="dashboard.html">
+          <img src="dist/img/logo-dark.png"><span class="badge bg-secondary role-info">Buyer</span>
+        </a>
+      </div>
+      <p class="login-box-msg">Sign in to start your session</p>
+      <form action="dashboard-completing-data.html" method="post">
+
+        <div class="form-group row mb-3">
+          <div class="col-lg-9">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="dist/img/icons/ic-briefcase.svg">
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Company code">
+            </div>
+            <!--<span class="fas fa-check-circle text-success field-icon" id=""></span>-->
+          </div>
+          <div class="col-lg-3">
+            <a href="index-company-code-verified.html" class="btn btn-primary btn-block">Check</a>
+          </div>
+        </div>
+
+        <div class="form-group row mb-3">
+          <div class="col-lg-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="dist/img/icons/ic-group.svg">
+                </div>
+              </div>
+              <select class="form-control" disabled>
+                <option id="0">- Select role -</option>
+                <option id="1">Seller</option>
+                <option id="2">Buyer</option>
+                <option id="3">Both</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row mb-3">
+          <div class="col-lg-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="dist/img/icons/ic-user.svg">
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="Username">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group row mb-3">
+          <div class="col-lg-12">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <img src="dist/img/icons/ic-password.svg">
+                </div>
+              </div>
+              <input type="password" class="form-control" placeholder="Password" id="password-field">
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <span toggle="#password-field" class="fas fa-eye field-icon toggle-password"></span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="text-right">
+              <a href="#">Forgot your password?</a>
+            </div>
+          </div>
+          <!-- /.col -->
+          <div class="col-12 pt-3">
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+          </div>
+          <!-- /.col -->
+        </div>
+      </form>
+
+      <div class="social-auth-links text-center mt-3 mb-3">
+        <p>Don’t have an account?</p>
+        <a href="register/register-buyer.html" class="btn btn-block btn-secondary">
+          Register
+        </a>
+      </div>
+
+      <p class="text-center mt-4 mb-0">
+        Need help? <a href="#" target="_blank">Click here</a>
+      </p>
+    </div>
+    <!-- /.login-card-body -->
+  </div>
+</div>
+<!-- /.login-box -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+  $(".toggle-password").click(function() {
+
+    $(this).toggleClass("fa-eye fa-eye-slash");
+    var input = $($(this).attr("toggle"));
+    if (input.attr("type") == "password") {
+      input.attr("type", "text");
+    } else {
+      input.attr("type", "password");
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register buyer | RUN Market Seller</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
+
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../plugins/select2/css/select2.min.css">
+  <link rel="stylesheet" href="../plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../plugins/bs-stepper/css/bs-stepper.min.css">
+
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../dist/css/style.css">
+
+  <!-- Custom style -->
+  <link rel="stylesheet" href="../dist/css/runstyle.css">
+
+  <style type="text/css">
+    ol li {
+      padding-bottom: .5rem;
+    }
+  </style>
+
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+    <div class="container">
+      <a href="https://runsystem.id/" class="navbar-brand">
+        <img src="../dist/img/logo-dark.svg" alt="logo" class="brand-image d-none d-lg-block" style="width:100px;">
+        <img src="../dist/img/logo-dark-sm.svg" alt="logo-sm" class="brand-image d-lg-none">
+      </a>
+
+      <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Right navbar links -->
+      <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+
+        <!-- Languages -->
+        <li class="nav-item dropdown">
+          <a id="dropdownLanguage" class="btn btn-light" data-toggle="dropdown" href="#">
+            <span><img src="../dist/img/img-id.png" class="img-lang"></span> ID <i class="fas fa-chevron-down fa-sm ml-1"></i>
+          </a>
+            <ul aria-labelledby="dropdownLanguage" class="dropdown-menu border-0 shadow">
+              <li><a href="#" class="dropdown-item"><img src="../dist/img/img-id.png" class="img-lang"></span> ID</a></li>
+              <li><a href="#" class="dropdown-item"><img src="../dist/img/img-en.png" class="img-lang"></span> EN</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: calc(72vh - calc(3.5rem + 1px) - calc(3.5rem + 1px));">
+
+    <section id="page-title" class="bg-secondary">
+      <div class="container">
+        <div class="row pt-2">
+          <div class="col-6">
+            <h4 class="text-white py-4">Registrasi RUN Market</h4>
+          </div>
+          <div class="col-6">
+            <div class="text-right py-4">
+              <a href="https://runmarket.id/" class="text-white"><span class="fas fa-home class mr-1"></span> Kembali ke beranda</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main content -->
+    <section id="form-register">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 my-3">
+            <div class="card mt-3">
+              <div class="card-body">
+
+                <div class="bs-stepper">
+                  <div class="bs-stepper-header" role="tablist">
+                    <!-- your steps here -->
+                    <div class="step" data-target="#company-information">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="company-information" id="company-information-trigger">
+                        <span class="bs-stepper-circle"><i class="fas fa-building"></i></span>
+                        <span class="bs-stepper-label">Company information</span>
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#term-and-condition">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="term-and-condition" id="term-and-condition-trigger">
+                        <span class="bs-stepper-circle"><i class="fas fa-handshake"></i></span>
+                        <span class="bs-stepper-label">Term and Condition</span>
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#finish-registration">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="finish-registration" id="finish-registration-trigger">
+                        <span class="bs-stepper-circle"><i class="fas fa-flag"></i></span>
+                        <span class="bs-stepper-label">Finish registration</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bs-stepper-content p-0">
+
+                    <!-- your steps content here -->
+                    <div id="company-information" class="content" role="tabpanel" aria-labelledby="company-information-trigger">
+                      <p class="mb-4">Lengkapi data berikut untuk mendaftar sebagai buyer di RUN Market.</p>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label>Saya Adalah (I am a)<span class="text-danger">*</span></label>
+                            <div class="row mt-2">
+                              <div class="col-lg-2">
+                                <div class="select-role selected">
+                                  <p><i class="fas fa-store fa-lg mr-2"></i> Seller</p>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="select-role">
+                                  <p><i class="fas fa-shopping-cart fa-lg mr-2"></i> Buyer</p>
+                                </div>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="select-role">
+                                  <p><i class="fas fa-users fa-lg mr-2"></i> Both</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label>Company Name<span class="text-danger">*</span></label>
+                            <input type="text" name="company-name" class="form-control" placeholder="Your company name">
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label>Company Short Name<span class="text-danger">*</span></label>
+                            <input type="text" name="company-name" class="form-control" placeholder="max 3 character uppercase, ex : RUN" maxlength="3" oninput="this.value = this.value.toUpperCase()" onkeypress="return /[a-z]/i.test(event.key)">
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="form-group">
+                            <label>Email<span class="text-danger">*</span></label>
+                            <input type="email" name="email-address" class="form-control">
+                            <small class="text-danger"><i class="fas fa-exclamation-circle mr-1"></i> Incorrect email format!</small>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <img src="../dist/img/img-captcha.jpg" style="width:230px;">
+                        </div>
+                      </div>
+                      <div class="row mt-3">
+                        <div class="col-lg-6">
+                          <p class="mt-1">
+                            Need help? <a href="https://app.runmarket.id/dist/man/Eproc_Manual_For_Vendor.pdf" target="_blank"><span class="fas fa-download fa-sm"></span> Download manual book</a>
+                          </p>
+                        </div>
+                        <div class="col-lg-6 text-right">
+                          <button class="btn btn-primary" onclick="stepper.next()">Next</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="term-and-condition" class="content" role="tabpanel" aria-labelledby="term-and-condition-trigger">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <div class="overflow-auto my-3" style="height: 420px; border: 1px #e0e0e0 solid; border-radius: .5rem; padding: 1rem;">
+                            <h5 class="text-primary my-2">Term and Condition</h5>
+                            <hr/>
+                            <div class="py-4 px-4">
+                              <h5 class="font-weight-bold text-center pb-4">SYARAT DAN KETENTUAN LAYANAN DIGITAL PLATFORM PT GLOBAL SUKSES SOLUSI Tbk</h5>
+                              <p>Selamat datang di Syarat dan Ketentuan Layanan Digital Platform PT Global Sukses Solusi Tbk (selanjutnya disebut <strong>"S&K"</strong>). S&K ini akan meliputi penggunaan layanan <strong>R1</strong> (Pengguna <strong>R1</strong> selanjutnya akan disebut <strong>"User"</strong>), <strong>RUN Market Buyer</strong> (Pengguna <strong>RUN Market Buyer</strong> selanjutnya akan disebut <strong>"Buyer"</strong>) dan <strong>RUN Market Seller</strong> (Pengguna <strong>RUN Market Seller</strong> selanjutnya akan disebut <strong>"Seller"</strong>) (User, Buyer, dan Seller secara bersama-sama disebut <strong>"Pengguna"</strong>). Sebagai upaya pemberian layanan yang maksimal kepada setiap Pengguna, PT Global Sukses Solusi Tbk (selanjutnya disebut <strong>"Kami"</strong>) menerapkan S&K untuk digunakan sebagai acuan apabila ditemukan permasalahan dalam penggunaan Digital Platform Kami. Kami menyarankan anda sebagai Pengguna atau calon pengguna untuk membaca S&K ini dan turunannya (selanjutnya disebut <strong>"S&K Turunan"</strong>) secara berkala bersama dengan Kebijakan Privasi yang merupakan bagian yang tidak terpisahkan dari S&K ini.</p>
+                              <p><strong>Dengan menggunakan layanan atau melakukan Registrasi pada Digital Platform Kami, Pengguna memberikan penerimaan dan persetujuan yang tidak dapat dicabut atas S&amp;K ini, termasuk syarat dan ketentuan tambahan serta kebijakan yang disebutkan dan/atau terkait S&amp;K ini, Kebijakan Privasi Kami, dan setiap informasi yang tersedia di Digital Platform Kami termasuk namun tidak terbatas pada, bagian Help Center dan Frequently Asked Question dari Digital Platform. Pengguna akan bertanggung jawab atas semua penggunaan yang dilakukan dan/atau layanan yang didapatkan dari Digital Platform Kami, baik saat ini atau di masa mendatang.</strong></p>
+                              <p><strong>Apabila anda tidak menyetujui ketentuan ini, mohon jangan menggunakan layanan Kami atau mengakses situs.</strong></p>
+                              <ol type="I" class="font-weight-bold" style="position: relative;margin-left:-30px;">
+                                <li>
+                                  SYARAT DAN KETENTUAN UMUM
+                                  <ol type="A">
+                                    <li>
+                                      Keberlakuan
+                                      <ol class="font-weight-normal">
+                                        <li>Untuk menggunakan Digital Platform Kami secara penuh, Pengguna diminta untuk
+                                        melakukan pendaftaran akun pada Digital Platform Kami. Untuk kepentingan pendaftaran
+                                        akun tersebut, Kami akan mengumpulkan dan memproses informasi yang Pengguna berikan
+                                        termasuk namun tidak terbatas pada identitas diri atau badan, informasi alamat surat
+                                        elektronik (e-mail), nomor handphone maupun informasi lainnya yang harus Pengguna
+                                        isikan pada saat pendaftaran akun.</li>
+                                        <li>Pengguna menjamin kebenaran dan keaslian segala informasi yang akan Pengguna
+                                        masukkan, sediakan, dan daftarkan pada Digital Platform Kami serta menjamin dan
+                                        memiliki hak untuk membagikan, menyebarkan, dan menyalurkan segala informasi yang
+                                        didaftarkan tersebut. Lebih lanjut setiap informasi tersebut bukan dikategorikan atau terikat
+                                        pada ketentuan mengenai Informasi Rahasia antara Pengguna dan pihak lainnya yang tidak
+                                        diperbolehkan untuk disebarluaskan.</li>
+                                        <li>Kegagalan dalam memenuhi salah satu atau lebih ketentuan yang terkandung dalam S&K,
+                                        S&K Turunan, dan Kebijakan Privasi yang terkandung dan berkaitan dengan fitur dan
+                                        layanan Digital Platform dapat menyebabkan Pengguna dituntut baik secara pidana maupun
+                                        digugat secara perdata. Lebih lanjut Pengguna wajib memberikan ganti rugi baik materiil
+                                        maupun immateriil, memenuhi klaim dan sanksi, serta membebaskan Kami dari segala
+                                        tanggung jawab atas kesalahan Pengguna yang telah gagal memenuhi S&K, S&K Turunan,
+                                        dan Kebijakan Privasi.</li>
+                                        <li>Dalam bertransaksi, Pengguna diwajibkan bertransaksi melalui Digital Platform Kami hingga
+                                        proses transaksi selesai dengan fitur dan prosedur yang telah kami sediakan. Segala risiko
+                                        atas transaksi yang dilakukan diluar Digital Platform kami baik secara sebagian maupun
+                                        keseluruhan bukanlah tanggung jawab Kami.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Definisi
+                                      <p class="font-weight-normal mb-1">Kecuali ditentukan lain dalam hubungan kalimat di dalam S&K ini, istilah-istilah yang dipakai dalam
+                                      S&K ini haruslah diartikan sebagai berikut:</p>
+                                      <ol class="font-weight-normal">
+                                        <li><strong>“R1”</strong> adalah layanan Enterprise Resource Planning yang berbasis desktop;</li>
+                                        <li><strong>“User”</strong> adalah badan usaha maupun komisaris, direksi, dan/atau karyawan dari badan usaha yang menggunakan layanan R1;</li>
+                                        <li><strong>“RUN Market”</strong> adalah layanan e-Procurement yang menghubungkan Buyer dan Seller;</li>
+                                        <li><strong>“Buyer”</strong> adalah badan usaha yang menggunakan layanan RUN Market untuk melakukan transaksi pengadaan dan pembelian barang dan jasa kepada Seller;</li>
+                                        <li><strong>“Seller”</strong> adalah vendor penyedia produk dan jasa yang dipasarkan kepada Buyer pada platform RUN Market;</li>
+                                        <li><strong>“Cross Selling”</strong> adalah transaksi antara Seller dengan Buyer yang bukan merupakan asal dari Seller tersebut atau bisa disebut dengan Buyer baru pada platform RUN Market; </li>
+                                        <li><strong>“Informasi Rahasia”</strong> berarti mencakup, namun tidak terbatas pada, setiap informasi
+                                        mengenai hukum, usaha dan atau teknis sehubungan dan terkait dengan Pihak Yang
+                                        Mengungkapkan dan/atau Kerja Sama termasuk, namun tidak terbatas, pada informasi
+                                        Afiliasi, Seller (vendor), agen, produk, harga, informasi keuangan, rencana, proses usaha,
+                                        rencana usaha, penjualan, desain, data, proyeksi pemasaran, rencana pemasaran,
+                                        perkiraan, basis data Klien, Penemuan, serta setiap informasi dan data lain terkait dengan
+                                        Pihak Yang Mengungkapkan dan/atau Kerja Sama, yang dapat diberikan, baik secara lisan,
+                                        maupun secara tertulis, atau melalui bentuk magnetik, media elektronik, atau foto, atau
+                                        gambar, dan atau dalam bentuk lain, oleh Pihak Yang Mengungkapkan kepada Pihak Yang
+                                        Menerima termasuk, usulan dan atau pembicaraan, yang mengandung atau didasarkan
+                                        pada, baik seluruhnya maupun sebagian, informasi yang diberikan oleh Pihak Yang
+                                        Mengungkapkan;</li>
+                                        <li><strong>“Pihak Yang Menerima”</strong>, berarti suatu pihak yang menerima Informasi Rahasia dari pihak lainnya;</li>
+                                        <li><strong>“Pihak Yang Mengungkapkan”</strong>, berarti suatu pihak yang memberikan Informasi Rahasia kepada pihak lainnya;</li>
+                                        <li><strong>“Afiliasi”</strong> berarti setiap pihak, kerabat, anak perusahaan, atau induk perusahaan dari suatu Pihak, atau perusahaan yang dikendalikan oleh, atau mengendalikan suatu Pihak;</li>
+                                        <li><strong>“Personil”</strong> berarti direktur, komisaris, pegawai, penasihat atau pihak lain dari suatu Pihak yang dapat secara wajar mengakses Informasi Rahasia;</li>
+                                        <li><strong>“Wanprestasi”</strong>, berarti segala perbuatan sebagaimana diatur dalam Pasal 1243 Kitab Undang-Undang Hukum Perdata.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Kerahasiaan dan Kepemilikan Data
+                                      <ol class="font-weight-normal">
+                                        <li>Pihak Yang Menerima dengan ini setuju bahwa Informasi Rahasia merupakan milik dari
+                                        Pihak Yang Mengungkapkan. Tidak ada satu ketentuan pun dalam Perjanjian ini yang
+                                        memberikan pengertian atau penafsiran, atau dapat ditafsirkan bahwa setiap Informasi
+                                        Rahasia yang diberikan, dikirimkan atau diungkapkan kepada Pihak Yang Menerima adalah
+                                        bentuk dari pengalihan kepemilikan, hibah, pemberian opsi, atau pemberian lisensi hak
+                                        kekayaan intelektual atas Informasi Rahasia;</li>
+                                        <li>Dengan diberikan atau diungkapkan nya Informasi Rahasia oleh Pihak Yang Mengungkapkan
+                                        kepada Pihak Yang Menerima, Pihak Yang Menerima wajib untuk:
+                                          <ol type="a">
+                                            <li>tidak mempergunakan Informasi Rahasia selain untuk keperluan Kerja Sama;</li>
+                                            <li>tidak mempergunakan Informasi Rahasia yang dapat merugikan Pihak Yang
+                                            Mengungkapkan dan tidak, dengan cara melawan hukum atau dengan cara yang tidak
+                                            etis, mempergunakan Informasi Rahasia untuk keuntungan dirinya sendiri atau pihak
+                                            lain;</li>
+                                            <li>menjaga kerahasiaannya dan memastikan bahwa Informasi Rahasia tidak diungkapkan
+                                            kepada Personil, Afiliasi, atau Perwakilan kecuali dalam hal pengungkapan tersebut
+                                            dipandang perlu untuk kepentingan Kerja Sama dan atas dasar “perlu untuk diketahui”
+                                            untuk kepentingan Kerja Sama tanpa mengesampingkan ketentuan lain dari Perjanjian
+                                            ini;</li>
+                                            <li>memastikan bahwa seluruh Personil, Afiliasi, dan Perwakilan juga menjaga kerahasiaan
+                                            dari Informasi Rahasia yang diungkapkan atau dapat diketahui oleh mereka atau salah
+                                            satu dari mereka sesuai dengan syarat-syarat dan ketentuan Perjanjian ini, dengan
+                                            ketentuan bahwa Pihak Yang Menerima tetap bertanggung jawab secara penuh
+                                            terhadap Pihak Yang Mengungkapkan atas pelanggaran Perjanjian ini oleh setiap
+                                            Personel dan Afiliasi;</li>
+                                            <li>mengambil dan memastikan diambilnya langkah-langkah yang wajar yang perlu
+                                            dilakukan oleh Pihak Yang Menerima dan/atau Personil, Afiliasi, atau Perwakilannya
+                                            untuk memastikan kerahasiaan Informasi Rahasia;</li>
+                                            <li>tidak membuka Informasi Rahasia kepada pihak ketiga kecuali sebelumnya telah
+                                            mendapatkan persetujuan tertulis dari Pihak Yang Mengungkapkan; dan</li>
+                                            <li>tidak, atau mengizinkan pihak lain, termasuk Personil, Afiliasi, dan Perwakilannya,
+                                            untuk membuat fotokopi/salinan atau mereproduksi dalam bentuk apapun, setiap
+                                            Informasi Rahasia tanpa sebelumnya telah mendapatkan persetujuan tertulis dari Pihak
+                                            Yang Mengungkapkan, kecuali yang secara wajar diperlukan untuk Kerja Sama;</li>
+                                            <li>membuat agar seluruh Informasi Rahasia dan seluruh informasi yang dihasilkan oleh
+                                            Pihak Yang Mengungkapkan dari suatu Informasi Rahasia terpisah dari dokumen dan
+                                            catatan-catatan atau rekaman-rekaman lain, serta memelihara tempat penyimpanan
+                                            yang layak dan aman atas setiap Informasi Rahasia dalam bentuk apapun yang berada
+                                            padanya; dan</li>
+                                            <li>untuk tidak menggunakan, mereproduksi, mengalih bentukkan, atau menyimpan setiap
+                                            dari Informasi Rahasia pada akses komputer atau sistem penerimaan informasi
+                                            elektronik eksternal atau mengirimkan Informasi Rahasia tersebut dalam bentuk
+                                            apapun termasuk namun tidak terbatas pada bentuk tulisan, lisan, gambar, rekaman,
+                                            cakram optik (optical disc), flash disk, hard disk ke luar tempat usaha Pihak Yang
+                                            Menerima.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Suatu informasi yang tidak dianggap Informasi Rahasia sebagaimana dimaksud dalam
+                                        Perjanjian ini adalah apabila suatu informasi tersebut memenuhi salah satu ketentuan di
+                                        bawah ini:
+                                          <ol type="a">
+                                            <li>telah menjadi pengetahuan umum atau telah dipublikasikan kepada umum dengan
+                                            cara yang tidak melanggar ketentuan kerahasiaan berdasarkan Perjanjian ini maupun
+                                            ketentuan lain yang terkait dengannya;</li>
+                                            <li>telah diketahui oleh Pihak Yang Menerima sebelum Informasi Rahasia diberikan atau
+                                            diungkapkan kepada Pihak Yang Menerima sebagaimana dibuktikan dengan bukti
+                                            tertulis Pihak Yang Menerima; dan/atau</li>
+                                            <li>disyaratkan untuk diungkapkan berdasarkan ketentuan hukum yang berlaku atau
+                                            berdasarkan perintah badan peradilan atau instansi Pemerintah terkait.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Dalam hal Pihak Yang Menerima, Afiliasi, Personil, maupun Perwakilannya secara hukum
+                                        diperintah untuk mengungkapkan suatu Informasi Rahasia kepada lembaga peradilan,
+                                        pemerintah, peraturan perundang-undangan, atau pejabat yang berwenang atas hal
+                                        tersebut, Pihak Yang Menerima sebelum melakukan pengungkapan kepada pihak lain
+                                        tersebut wajib menyampaikan permohonan izin pengungkapan Informasi Rahasia secara
+                                        tertulis kepada Pihak Yang Mengungkapkan paling lambat 7 (tujuh) Hari Kerja setelah Pihak
+                                        Yang Menerima mendapat perintah pengungkapan tersebut, agar Pihak Yang
+                                        Mengungkapkan dapat melakukan upaya hukum atau tindakan protektif lainnya untuk
+                                        mencegah atau mengabaikan permohonan izin pengungkapan tersebut guna menegakkan
+                                        kepatuhan terhadap ketentuan-ketentuan Perjanjian ini dan memberi persetujuan atas
+                                        pengungkapan informasi terkait.</li>
+                                        <li>Atas permintaan Pihak Yang Mengungkapkan, Pihak Yang Menerima wajib menyebabkan
+                                        dikembalikannya atau dimusnahkannya dokumen-dokumen atau data terkait dan/atau yang
+                                        termasuk sebagai Informasi Rahasia dan setiap reproduksinya apabila pengembalian atau
+                                        pemusnahan tersebut tidak dilarang oleh aturan perundang-undangan, dengan ketentuan
+                                        teknis mengenai pengembalian atau pemusnahan yang dimaksud dalam Pasal ini, akan
+                                        ditentukan dalam sebuah pemberitahuan tertulis oleh Pihak Yang Mengungkapkan.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Hukum dan Sanksi
+                                      <ol class="font-weight-normal">
+                                        <li>S&K ini diatur, ditafsirkan, dan dilaksanakan sesuai dengan hukum yang berlaku di Negara
+                                        Republik Indonesia.</li>
+                                        <li>Dalam hal terdapat salah satu maupun beberapa ketentuan dari S&K ini yang dianggap
+                                        melanggar hukum, batal, atau karena alasan apapun tidak dapat diberlakukan berdasarkan
+                                        hukum yang berlaku di Negara Republik Indonesia, maka ketentuan tersebut harus dianggap
+                                        dapat dipisahkan dari S&K ini dan tidak akan mempengaruhi keabsahan dan keberlakuan
+                                        setiap ketentuan yang lainnya maupun keabsahan dan keberlakuan ketentuan tersebut
+                                        berdasarkan hukum yang berlaku di Negara Republik Indonesia.</li>
+                                        <li>Dalam hal Pengguna melanggar ketentuan yang terdapat dalam S&K ini, Kami berhak
+                                        mengenakan sanksi sesuai dengan ketentuan yang telah Kami tetapkan.</li>
+                                        <li>Setiap penggunaan tanpa hak atau tidak sah atau gangguan atas layanan Digital Platform
+                                        Kami yang dilakukan oleh siapapun juga, sesuai dengan peraturan perundang-undangan
+                                        yang berlaku di Negara Republik Indonesia (termasuk tapi tidak terbatas pada peraturan
+                                        telekomunikasi, penyiaran, kitab undang-undang hukum pidana) adalah perbuatan
+                                        melawan hukum yang diancam hukuman pidana.</li>
+                                        <li>Pelanggaran atas ketentuan S&K, S&K Turunan, dan/atau Kebijakan Privasi oleh Pengguna
+                                        akan menimbulkan hak bagi Kami untuk melakukan tuntutan pidana, gugatan perdata,
+                                        maupun pengenaan sanksi kepada Pengguna sesuai dengan hukum yang berlaku di
+                                        Indonesia dan kebijakan Kami.</li>
+                                        <li>Kami berhak memutuskan layanan Digital Platform Kami jika terjadi penyalahgunaan atas
+                                        penggunaan Digital Platform Kami maupun atas pelanggaran S&K ini.</li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  SYARAT DAN KETENTUAN UMUM RUN MARKET BUYER
+                                  <ol type="A">
+                                    <li>
+                                      Keberlakuan
+                                      <ol class="font-weight-normal">
+                                        <li>S&K ini mulai berlaku sejak hari pertama Buyer menggunakan layanan RUN Market
+                                        Procurement.</li>
+                                        <li>Dengan menggunakan RUN Market Procurement, Buyer telah memberikan penerimaan dan
+                                        persetujuan yang tidak dapat dicabut atas isi S&K ini, termasuk kebijakan maupun aturan
+                                        lain yang terkait dengan S&K ini.</li>
+                                        <li>Dalam hal Buyer tidak menyetujui ketentuan ini, Buyer dipersilahkan untuk berhenti
+                                        menggunakan RUN Market Procurement.</li>
+                                        <li>Segala perubahan terhadap RUN Market Procurement beserta fasilitasnya akan tetap
+                                        tunduk pada S&K ini.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Penggunaan Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>Buyer wajib melakukan registrasi secara online dengan data yang benar dan akurat melalui RUN Market.</li>
+                                        <li>Setelah proses registrasi pada poin B.1 tersebut di atas, Buyer akan mendapat username dan password yang dapat digunakan untuk log in akun RUN Market.</li>
+                                        <li>Buyer menyetujui bahwa username dan password yang diperoleh merupakan representasi Buyer atas segala aktivitas dalam RUN Market dan penggunaan atas username dan password tersebut akan terasosiasikan dengan segala aktivitas dalam sistem Kami.</li>
+                                        <li>Buyer bersedia untuk dikenakan biaya transaction fee atas aktivitas pembayaran.</li>
+                                        <li>Buyer bertanggung jawab atas penjagaan kerahasiaan username dan password dan bertanggung jawab atas transaksi dan kegiatan lain yang menggunakan akun miliknya.</li>
+                                        <li>Buyer wajib memutakhirkan data diri atau badan dalam hal terdapat perubahan atau jika tidak sesuai dengan S&K ini.</li>
+                                        <li>Buyer setuju untuk segera memberikan informasi kepada Kami apabila mengetahui adanya penyalahgunaan akun miliknya oleh pihak lain yang tidak berhak atau jika ada gangguan keamanan atas akun miliknya.</li>
+                                        <li>Buyer yang memenuhi kewajibannya berdasarkan S&K ini berhak menikmati layanan RUN Market selama 7 (tujuh) hari seminggu dan 24 (dua puluh empat) jam sehari dari Kami.</li>
+                                        <li>Buyer berhak untuk mendapatkan layanan perbaikan, maintenance, dan patch terkait platform RUN Market.</li>
+                                        <li>RUN Market akan selalu memberikan informasi terbarunya melalui salah satu saluran komunikasi, website, teks berjalan (scrolling text), atau pada media-media lainnya.</li>
+                                        <li>Kami berhak sewaktu-waktu mengurangi, menambah atau mengubah layanan RUN Market dengan pemberitahuan terlebih dahulu melalui pengumuman di salah satu saluran komunikasi RUN Market seperti pada website, dan teks berjalan (scrolling text), atau pada media-media lainnya, kecuali perubahan yang dilakukan pihak ketiga.</li>
+                                        <li>Calon Buyer bertanggung jawab penuh terhadap kebenaran dan seluruh data dan informasi yang disampaikan di dalam Registration Form RUN Market.</li>
+                                        <li>Atas kebijakan Kami. Kami berhak secara sepihak menolak permohonan calon Buyer.</li>
+                                        <li>Buyer bersedia untuk memberikan seluruh informasi terkait Seller, yaitu vendor yang sudah sah terdaftar sebagai vendor di sisi Buyer.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Implementasi Integrasi RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>Implementasi integrasi RUN Market merupakan salah satu layanan dari Digital Platform yang memungkinkan integrasi antara Platform RUN Market Buyer dan Enterprise Resource Planning (<strong>“ERP”</strong>) RUN System Modul Procurement</li>
+                                        <li>Permintaan implementasi integrasi RUN Market bagi Buyer baru akan dilaksanakan setelah Buyer mengisi Registration Form RUN Market dan menyepakati S&K ini dengan prosedur yang telah Kami tetapkan.</li>
+                                        <li>Implementasi Integrasi RUN Market akan dilakukan sesuai dengan lokasi Buyer dengan tanggal dan waktu pengerjaan yang disepakati bersama.</li>
+                                        <li>Kami akan menginformasikan kepada Buyer tentang seluruh tindakan serta proses kegiatan dalam rangka implementasi Integrasi RUN Market pada Buyer.</li>
+                                        <li>Buyer wajib memberikan hak akses ke dalam Enterprise Resource Planning (<strong>“ERP”</strong>) RUN System Modul Procurement yang dimiliki Buyer kepada Kami untuk pelaksanaan proses implementasi integrasi layanan RUN Market dan menyepakati akibat yang ditimbulkan dari proses implementasi integrasi.</li>
+                                        <li>Implementasi integrasi RUN Market yang telah selesai dilaksanakan akan dituangkan dalam sebuah Berita Acara Serah Terima (<strong>“BAST”</strong>) yang ditandatangani oleh perwakilan sah Buyer dan Kami;</li>
+                                        <li>Buyer membebaskan Kami dari segala gugatan/tuntutan pihak manapun juga atas segala kemungkinan yang timbul akibat dari implementasi integrasi RUN Market tersebut. Namun demikian, Kami akan selalu berpedoman kepada prinsip keamanan, kecermatan dan profesionalisme dalam pelaksanaan implementasi integrasi RUN Market tersebut.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Aktivitas Transaksi
+                                      <ol class="font-weight-normal">
+                                        <li>Buyer wajib untuk menggunakan Virtual Account yang tersedia pada platform RUN Market atas setiap aktivitas transaksi yang dilakukan dengan Seller.</li>
+                                        <li>Buyer akan dikenakan biaya untuk setiap aktivitas transaksi pembayaran yang dilakukan (Selanjutnya disebut Transaction Fee).</li>
+                                        <li>Besaran Transaction Fee yang di tanggung oleh Buyer adalah sebesar Rp3.500,00 (tiga ribu lima ratus rupiah) hingga Rp5.000,00 (lima ribu rupiah) setiap pembayaran yang dilakukan.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Penggunaan Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>
+                                          Buyer dilarang untuk:
+                                          <ol type="a">
+                                            <li>mengenakan biaya kepada orang atau pihak lain untuk menikmati layanan RUN Market;</li>
+                                            <li>memberikan atau menayangkan ulang atau mendistribusikan atau memperluas sendiri layanan RUN Market dengan cara apapun kepada pihak lain;</li>
+                                            <li>memperbanyak dan/atau menggandakan dalam bentuk apapun semua layanan RUN Market;</li>
+                                            <li>menggunakan segala bentuk layanan maupun identitas RUN Market, termasuk namun tidak terbatas pada logo, trademark, dan lain sebagainya untuk kepentingan pribadi dan/atau pihak lain manapun;</li>
+                                            <li>memberikan kesempatan kepada pihak lain untuk memanfaatkan sistem RUN Market yang tidak sebagaimana mestinya tanpa izin tertulis sebelumnya dari Kami.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Buyer menerima dan menyetujui bahwa seluruh sistem dan platform RUN Market harus digunakan untuk tujuan sebagaimana mestinya yang sesuai dengan norma-norma, hukum, dan peraturan perundang-undangan yang berlaku di Negara Republik Indonesia</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pemutusan atau Pemberhentian Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>Jika Buyer berkehendak untuk melakukan pemberhentian penggunaan layanan RUN Market,
+                                        Buyer wajib memberikan pemberitahuan terlebih dahulu kepada Kami dengan
+                                        menghubungi Customer Service RUN Market selambat-lambatnya 10 (sepuluh) hari kalender
+                                        sebelumnya.</li>
+                                        <li>Buyer juga tetap berkewajiban melunasi sisa pembayarannya kepada Seller terkait
+                                        pengadaan yang telah dilakukan dan pengurusan administrasi terkait.</li>
+                                        <li>Buyer yang telah dilakukan pemutusan layanan atau pembatasan akses, baik atas
+                                        permintaan Buyer sendiri maupun disebabkan oleh kebijakan Kami, Kami dan/atau pihak
+                                        lain yang secara resmi Kami tunjuk dapat sewaktu-waktu mengadakan pemeriksaan dan
+                                        diskusi langsung dengan penanggung jawab Buyer. Pelaksanaan pemeriksaan dan diskusi
+                                        tersebut mengacu pada hukum dan peraturan perundang-undangan yang berlaku dan jika
+                                        diperlukan akan bekerja sama dengan jajaran penegak hukum dan instansi pemerintah yang
+                                        berwenang.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Tanggung Jawab Kami
+                                      <ol class="font-weight-normal">
+                                        <li>Kami tidak bertanggungjawab atas segala bentuk Wanprestasi yang dilakukan oleh Seller
+                                        terkait transaksi yang dilakukan dengan Buyer.</li>
+                                        <li>Buyer dengan ini membebaskan Kami dari segala bentuk tanggung jawab atas transaksi yang
+                                        dilakukan antara Buyer dan Seller di luar platform RUN Market.</li>
+                                        <li>Kami tidak bertanggung jawab dan Buyer setuju untuk membebaskan Kami dari tanggung
+                                        jawab atas terjadinya keadaan kahar atau force majeure, yaitu kondisi diluar
+                                        kehendak/kemampuan Kami, termasuk namun tidak terbatas pada bencana alam,
+                                        huru-hara, revolusi, blokade, embargo, tindakan dari pemerintah, pemogokan, penutupan
+                                        perusahaan, wabah, perintah hukum apapun, proklamasi, regulasi, ordonansi, saluran yang
+                                        hilang karena gangguan server yang bukan merupakan kesalahan Kami, dan hal-hal lain yang
+                                        mungkin terjadi selama masa penggunaan yang berada di luar jangkauan kemampuan
+                                        manusia pada umumnya. Dalam hal terjadi keadaan kahar atau force majeure tersebut,
+                                        Kami tidak berkewajiban untuk memberikan ganti rugi dalam bentuk apapun kepada Buyer,
+                                        termasuk tidak berkewajiban pada penyesuaian biaya layanan, biaya admin, dan biaya
+                                        lainnya.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pernyataan dan Jaminan Buyer
+                                      <p class="font-weight-normal mb-1">Buyer menyatakan dan menjamin bahwa:</p>
+                                      <ol class="font-weight-normal">
+                                        <li>Buyer memiliki kapasitas hukum, hak, kewajiban, serta wewenang untuk mengikatkan diri pada S&K ini dan mematuhi seluruh isi S&K ini; da</li>
+                                        <li>Buyer akan menggunakan layanan RUN Market untuk tujuan yang sah dan sesuai S&K ini serta peraturan perundang-undangan, kode, arahan, pedoman, kebijakan, dan aturan lain yang berlaku.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Lain-lain
+                                      <ol class="font-weight-normal">
+                                        <li>Biaya Layanan dan biaya-biaya lainnya yang mungkin timbul atas layanan RUN Market sewaktu-waktu dapat berubah dengan atau tanpa pemberitahuan terlebih dahulu kepada Buyer.</li>
+                                        <li>Kami berhak melakukan promosi kepada Buyer, baik langsung maupun tidak langsung, termasuk juga pengiriman informasi produk, atau jasa, atau berita langsung ke Buyer.</li>
+                                        <li>Kami berhak melakukan revisi, perubahan, penambahan, pengurangan, atau perbaikan terhadap S&K ini setiap waktu, tanpa pemberitahuan terlebih dahulu kepada Buyer.</li>
+                                        <li>Dalam hal Buyer berhenti menggunakan layanan RUN Market, maka data informasi yang sudah diberikan oleh Buyer kepada Kami akan tetap menjadi milik Kami.</li>
+                                        <li>S&K ini diatur, ditafsirkan, dan dilaksanakan sesuai dengan hukum yang berlaku di Negara Republik Indonesia.</li>
+                                        <li>Dalam hal terdapat salah satu maupun beberapa ketentuan dari S&K ini yang dianggap melanggar hukum, batal, atau karena alasan apapun tidak dapat diberlakukan berdasarkan hukum yang berlaku di Negara Republik Indonesia, maka ketentuan tersebut harus dianggap dapat dipisahkan dari S&K ini dan tidak akan mempengaruhi keabsahan dan keberlakuan setiap ketentuan yang lainnya maupun keabsahan dan keberlakuan ketentuan tersebut berdasarkan hukum yang berlaku di Negara Republik Indonesia.</li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  SYARAT DAN KETENTUAN RUN MARKET SELLER
+                                  <ol type="A">
+                                    <li>
+                                      Keberlakuan
+                                      <ol class="font-weight-normal">
+                                        <li>S&K ini berlaku sebagaimana mestinya dan wajib diperhatikan oleh Seller sebelum menggunakan layanan RUN Market.</li>
+                                        <li>S&K ini mulai berlaku sejak kali pertama Seller menggunakan layanan RUN Market.</li>
+                                        <li>Dengan menggunakan layanan RUN Market, Seller telah memberikan penerimaan dan persetujuan yang tidak dapat dicabut atas isi S&K ini, termasuk namun tidak terbatas pada S&K Turunan dan Kebijakan Privasi.</li>
+                                        <li>Dalam hal Seller tidak menyetujui ketentuan S&K ini, Seller dipersilahkan untuk berhenti menggunakan layanan RUN Market.</li>
+                                        <li>Segala perubahan terhadap RUN Market beserta fasilitasnya akan tetap tunduk pada S&K ini.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Penggunaan Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>Seller wajib melakukan registrasi secara online dengan data yang benar dan akurat melalui platform RUN Market.</li>
+                                        <li>Calon Seller bertanggung jawab penuh terhadap kebenaran dan seluruh data dan informasi yang disampaikan di dalam Registration Form RUN Market.</li>
+                                        <li>Atas kebijakan Kami. Kami berhak secara sepihak menolak registrasi dari calon Seller.</li>
+                                        <li>Setelah proses registrasi pada poin B.1 tersebut di atas, Seller akan mendapat username dan password yang dapat digunakan untuk log in akun RUN Market.</li>
+                                        <li>Seller menyetujui bahwa username dan password yang diperoleh merupakan representasi Seller atas segala aktivitas dalam platform RUN Market dan penggunaan atas username dan password tersebut akan terasosiasikan dengan segala aktivitas dalam sistem Kami.</li>
+                                        <li>Seller bertanggung jawab atas penjagaan kerahasiaan username dan password dan bertanggung jawab atas transaksi dan kegiatan lain yang menggunakan akun miliknya.</li>
+                                        <li>Seller wajib memutakhirkan data diri atau badan dalam hal terdapat perubahan atau jika tidak sesuai dengan S&K ini.</li>
+                                        <li>Seller setuju untuk segera memberikan informasi kepada Kami apabila mengetahui adanya penyalahgunaan akun miliknya oleh pihak lain yang tidak berhak atau jika ada gangguan keamanan atas akun miliknya.</li>
+                                        <li>Seller yang memenuhi kewajibannya berdasarkan S&K ini berhak menikmati layanan RUN Market selama 7 (tujuh) hari seminggu dan 24 (dua puluh empat) jam sehari dari Kami.</li>
+                                        <li>Seller berhak untuk mendapatkan layanan perbaikan, maintenance, dan patch terkait platform RUN Market.</li>
+                                        <li>RUN Market akan selalu memberikan informasi terbarunya melalui salah satu saluran komunikasi, website, teks berjalan (scrolling text), atau pada media-media lainnya.</li>
+                                        <li>Kami berhak sewaktu-waktu mengurangi, menambah atau mengubah layanan RUN Market dengan pemberitahuan terlebih dahulu melalui pengumuman di salah satu saluran komunikasi RUN Market seperti pada website, dan teks berjalan (scrolling text), atau pada media-media lainnya, kecuali perubahan yang dilakukan pihak ketiga.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Aktivitas Transaksi
+                                      <ol class="font-weight-normal">
+                                        <li>Seller wajib untuk menggunakan Virtual Account yang tersedia pada platform RUN Market atas setiap aktivitas transaksi yang dilakukan dengan Buyer.</li>
+                                        <li>Seller akan dikenakan biaya untuk setiap aktivitas transaksi yang dilakukan apabila terjadi proses Cross Selling (selanjutnya disebut <strong>“Cross Selling Fee”</strong>)</li>
+                                        <li>Besaran Cross Selling Fee adalah sebesar 0,5% (nol koma lima persen) hingga 1% (satu persen) dari nilai transaksi Cross Selling.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Penggunaan Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>
+                                          Seller dilarang untuk:
+                                          <ol type="a">
+                                            <li>mengenakan biaya kepada orang atau pihak lain untuk menikmati layanan RUN Market;</li>
+                                            <li>memberikan atau menayangkan ulang atau mendistribusikan atau memperluas sendiri layanan RUN Market dengan cara apapun kepada pihak lain;</li>
+                                            <li>memperbanyak dan/atau menggandakan dalam bentuk apapun semua layanan RUN Market;</li>
+                                            <li>menggunakan segala bentuk layanan maupun identitas RUN Market, termasuk namun tidak terbatas pada logo, trademark, dan lain sebagainya untuk kepentingan pribadi dan/atau pihak lain manapun;</li>
+                                            <li>memberikan kesempatan kepada lain untuk memanfaatkan sistem RUN Market yang tidak sebagaimana mestinya tanpa izin tertulis sebelumnya dari Kami.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Seller menerima dan menyetujui bahwa seluruh sistem dan platform RUN Market harus
+                                        digunakan untuk tujuan sebagaimana mestinya yang sesuai dengan etika bisnis,
+                                        norma-norma, hukum, dan peraturan perundang-undangan yang berlaku di Negara
+                                        Republik Indonesia.</li>
+                                        <li>Seller menyadari bahwa usaha apapun untuk dapat menembus sistem komputer dengan
+                                        tujuan memanipulasi data dan informasi pada platform RUN System merupakan tindakan
+                                        melanggar hukum.</li>
+                                        <li>Seller bersedia untuk tidak membuka, mengeluarkan, maupun memberikan setiap informasi
+                                        dan data kepada pihak lainnya, dan/atau penggunaannya dengan cara bagaimanapun baik
+                                        langsung maupun tidak langsung terhadap setiap informasi dan data yang berhubungan
+                                        dengan kegiatan transaksi pada platform RUN Market.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pembekuan Akun, Pemutusan, Pemberhentian Penggunaan Layanan RUN Market
+                                      <ol class="font-weight-normal">
+                                        <li>Kami secara sepihak berhak melakukan pembekuan terhadap akun Seller, dalam hal:
+                                          <ol type="a">
+                                            <li>Seller diduga atau terbukti melakukan pelanggaran atas satu, beberapa, ketentuan S&K ini maupun S&K Turunan dan/atau Kebijakan Privasi RUN Market;</li>
+                                            <li>track record transaksi Seller tidak baik;</li>
+                                            <li>Seller diduga melakukan penipuan dalam melaksanakan transaksi melalui platform RUN Market.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Seller dapat mendapatkan Kembali hak akses atas akunnya dan menikmati layanan RUN
+                                        Market setelah terbukti tidak bersalah melakukan hal-hal sebagaimana yang tercantum
+                                        dalam poin E.1, atau atas kebijakan Kami.</li>
+                                        <li>Kami secara sepihak berhak untuk melakukan pemutusan layanan RUN Market Seller dalam hal:
+                                          <ol type="a">
+                                            <li>Seller terbukti melakukan pelanggaran S&K, S&K Turunan, dan/atau Kebijakan Privasi RUN Market;</li>
+                                            <li>Seller terbukti melakukan penipuan dalam melaksanakan transaksi melalui platform RUN Market;</li>
+                                            <li>Seller masuk kedalam black lists Kami atas alasan-alasan yang dianggap memenuhi kriteria black lists sesuai kebijakan Kami.</li>
+                                          </ol>
+                                        </li>
+                                        <li>Seller berhak melakukan pemutusan atau penghentian penggunaan layanan RUN Market dengan cara mengirimkan e-mail atau surat kepada Kami.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Tanggung Jawab Kami
+                                      <ol class="font-weight-normal">
+                                        <li>Kami tidak bertanggungjawab atas segala bentuk Wanprestasi yang dilakukan oleh Buyer terkait transaksi yang dilakukan dengan Seller.</li>
+                                        <li>Seller dengan ini membebaskan Kami dari segala bentuk tanggung jawab atas transaksi yang dilakukan antara Seller dan Buyer di luar platform RUN Market.</li>
+                                        <li>Kami tidak bertanggung jawab dan Seller setuju untuk membebaskan Kami dari tanggung
+                                        jawab atas terjadinya keadaan kahar atau force majeure, yaitu kondisi diluar
+                                        kehendak/kemampuan Kami, termasuk namun tidak terbatas pada bencana alam,
+                                        huru-hara, revolusi, blokade, embargo, tindakan dari pemerintah, pemogokan, penutupan
+                                        perusahaan, wabah, perintah hukum apapun, proklamasi, regulasi, ordonansi, saluran yang
+                                        hilang karena gangguan server yang bukan merupakan kesalahan Kami, dan hal-hal lain yang
+                                        mungkin terjadi selama masa penggunaan yang berada di luar jangkauan kemampuan
+                                        manusia pada umumnya. Dalam hal terjadi keadaan kahar atau force majeure tersebut,
+                                        Kami tidak berkewajiban untuk memberikan ganti rugi dalam bentuk apapun kepada Seller,
+                                        termasuk tidak berkewajiban pada penyesuaian Biaya Layanan, biaya admin, dan biaya
+                                        lainnya.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pernyataan dan Jaminan Seller
+                                      <p class="font-weight-normal mb-1">Buyer menyatakan dan menjamin bahwa:</p>
+                                      <ol class="font-weight-normal">
+                                        <li>Seller memiliki kapasitas hukum, hak, kewajiban, serta wewenang untuk mengikatkan diri pada S&K ini dan mematuhi seluruh isi S&K ini; dan</li>
+                                        <li>Seller akan menggunakan layanan RUN Market untuk tujuan yang sah dan sesuai S&K ini serta peraturan perundang-undangan, kode, arahan, pedoman, kebijakan, dan aturan lain yang berlaku.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Lain-lain
+                                      <ol class="font-weight-normal">
+                                        <li>Kami berhak melakukan promosi kepada Seller, baik langsung maupun tidak langsung, termasuk juga pengiriman informasi produk, atau jasa, atau berita langsung ke Seller.</li>
+                                        <li>Kami berhak melakukan revisi, perubahan, penambahan, pengurangan, atau perbaikan terhadap S&K ini setiap waktu, tanpa pemberitahuan terlebih dahulu kepada Seller.</li>
+                                        <li>Dalam hal Seller berhenti menggunakan layanan RUN Market, maka data informasi yang sudah diberikan oleh Seller kepada Kami akan tetap menjadi milik Kami.</li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                                <li>
+                                  SYARAT DAN KETENTUAN R1
+                                  <ol type="A">
+                                    <li>
+                                      Keberlakuan
+                                      <ol class="font-weight-normal">
+                                        <li>S&K ini berlaku sebagaimana mestinya dan wajib diperhatikan oleh User sebelum menggunakan layanan R1.</li>
+                                        <li>S&K ini mulai berlaku sejak kali pertama User menggunakan layanan R1.</li>
+                                        <li>Dengan menggunakan layanan R1, User telah memberikan penerimaan dan persetujuan yang tidak dapat dicabut atas isi S&K ini, termasuk namun tidak terbatas pada S&K Turunan dan Kebijakan Privasi.</li>
+                                        <li>Dalam hal User tidak menyetujui ketentuan S&K ini, User dipersilahkan untuk berhenti menggunakan layanan R1.</li>
+                                        <li>Segala perubahan terhadap R1 beserta fasilitasnya akan tetap tunduk pada S&K ini.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Persyaratan User
+                                      <p class="font-weight-normal">
+                                        User dapat berbentuk badan yang menggunakan layanan R1.
+                                      </p>
+                                    </li>
+                                    <li>
+                                      Penggunaan Layanan
+                                      <ol class="font-weight-normal">
+                                        <li>Untuk dapat menggunakan layanan R1 sebagai User, terlebih dahulu User melakukan registrasi secara online dengan data yang benar dan akurat melalui platform website registrasi R1.</li>
+                                        <li>Setelah proses registrasi pada poin C.1 tersebut di atas, User akan mendapatkan email yang berisi file installer R1 serta Username dan password yang dapat digunakan untuk log in ke R1.</li>
+                                        <li>User menyetujui bahwa Username dan password yang diperoleh merupakan representasi User atas segala aktivitas dalam platform R1 dan penggunaan atas Username dan password tersebut akan terasosiasikan dengan segala aktivitas dalam sistem Kami.</li>
+                                        <li>User bertanggung jawab atas penjagaan kerahasiaan Username dan password dan bertanggung jawab atas transaksi dan kegiatan lain yang menggunakan akun miliknya.</li>
+                                        <li>User berhak untuk menggunakan layanan R1 selama 7 (tujuh) hari seminggu dan 24 (dua puluh empat) jam sehari.</li>
+                                        <li>User setuju untuk segera memberikan informasi kepada Kami apabila mengetahui adanya penyalahgunaan akun miliknya oleh pihak lain yang tidak berhak atau jika ada gangguan keamanan atas akun miliknya.</li>
+                                        <li>User berhak untuk mendapatkan bantuan dari Customer Service Kami terkait penggunaan layanan R1.</li>
+                                        <li>Kami akan selalu memberikan informasi terkait platform R1 melalui salah satu saluran komunikasi, website, teks berjalan (scrolling text), atau pada media-media lainnya.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Penggunaan Layanan
+                                      <ol class="font-weight-normal">
+                                        <li>User dilarang untuk: 
+                                          <ol type="a">
+                                            <li>mengenakan biaya kepada orang atau pihak lain untuk menikmati layanan R1;</li>
+                                            <li>memberikan atau menayangkan ulang atau mendistribusikan atau memperluas sendiri layanan R1 dengan cara apapun kepada pihak lain;</li>
+                                            <li>memperbanyak dan/atau menggandakan dalam bentuk apapun semua layanan R1;</li>
+                                            <li>menggunakan segala bentuk layanan maupun identitas R1, termasuk namun tidak terbatas pada logo, trademark, dan lain sebagainya untuk kepentingan pribadi dan/atau pihak lain manapun;</li>
+                                            <li>memberikan kesempatan kepada lain untuk memanfaatkan sistem R1 yang tidak sebagaimana mestinya tanpa izin tertulis sebelumnya dari Kami.</li>
+                                          </ol>
+                                        </li>
+                                        <li>User menerima dan menyetujui bahwa seluruh sistem dan platform R1 harus digunakan
+                                        untuk tujuan sebagaimana mestinya yang sesuai dengan etika bisnis, norma-norma,
+                                        hukum, dan peraturan perundang-undangan yang berlaku di Negara Republik
+                                        Indonesia.</li>
+                                        <li>User menyadari bahwa usaha apapun untuk dapat menembus sistem komputer
+                                        dengan tujuan memanipulasi data dan informasi pada platform R1 Merupakan tindakan
+                                        melanggar hukum.</li>
+                                        <li>User bersedia untuk tidak membuka, mengeluarkan, maupun memberikan setiap informasi
+                                        dan data kepada pihak lainnya, dan/atau penggunaannya dengan cara bagaimanapun baik
+                                        langsung maupun tidak langsung terhadap setiap informasi dan data yang berhubungan
+                                        dengan kegiatan transaksi pada platform R1.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pembekuan Akun, Pemutusan, Pemberhentian Penggunaan Layanan
+                                      <ol class="font-weight-normal">
+                                        <li>Kami secara sepihak berhak melakukan pembekuan terhadap akun User, dalam hal User
+                                        diduga atau terbukti melakukan pelanggaran atas satu, beberapa, ketentuan S&K ini
+                                        maupun S&K Turunan dan/atau Kebijakan Privasi R1.</li>
+                                        <li>User dapat mendapatkan Kembali hak akses atas akunnya dan menikmati layanan R1
+                                        setelah terbukti tidak bersalah melakukan hal-hal sebagaimana yang tercantum dalam
+                                        poin E.1, atau atas kebijakan Kami.</li>
+                                        <li>Kami secara sepihak berhak untuk melakukan pemutusan layanan R1 User dalam hal:
+                                          <ol type="a">
+                                            <li>User terbukti melakukan pelanggaran S&K, S&K Turunan, dan/atau Kebijakan Privasi R1;</li>
+                                            <li>User masuk kedalam black lists Kami atas alasan-alasan yang dianggap memenuhi kriteria black lists sesuai kebijakan Kami;</li>
+                                            <li>User memilih untuk tidak memperpanjang layanan penggunaan R1.</li>
+                                          </ol>
+                                        </li>
+                                        <li>User berhak melakukan pemutusan atau penghentian penggunaan layanan R1 dengan cara mengirimkan e-mail atau surat kepada Kami.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Batasan Tanggung Jawab Kami
+                                      <ol class="font-weight-normal">
+                                        <li>Kami tidak bertanggungjawab atas segala bentuk Wanprestasi yang dilakukan oleh User.</li>
+                                        <li>User dengan ini membebaskan Kami dari segala bentuk tanggung jawab atas transaksi yang dilakukan di luar platform R1.</li>
+                                        <li>Kami tidak bertanggung jawab dan User setuju untuk membebaskan Kami dari
+                                        tanggung jawab atas terjadinya keadaan kahar atau force majeure, yaitu kondisi diluar
+                                        kehendak/kemampuan Kami, termasuk namun tidak terbatas pada bencana alam,
+                                        huru-hara, revolusi, blokade, embargo, tindakan dari pemerintah, pemogokan, penutupan
+                                        perusahaan, wabah, perintah hukum apapun, proklamasi, regulasi, ordonansi, saluran yang
+                                        hilang karena gangguan server yang bukan merupakan kesalahan Kami, dan hal-hal lain
+                                        yang mungkin terjadi selama masa penggunaan yang berada di luar jangkauan kemampuan
+                                        manusia pada umumnya. Dalam hal terjadi keadaan kahar atau force majeure tersebut,
+                                        Kami tidak berkewajiban untuk memberikan ganti rugi dalam bentuk apapun kepada User,
+                                        termasuk tidak berkewajiban pada penyesuaian Biaya Layanan, biaya admin, dan biaya
+                                        lainnya.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Pernyataan dan Jaminan User
+                                      <p class="font-weight-normal mb-1">User menyatakan dan menjamin bahwa:</p>
+                                      <ol class="font-weight-normal">
+                                        <li>User memiliki kapasitas hukum, hak, kewajiban, serta wewenang untuk mengikatkan diri pada S&K ini dan mematuhi seluruh isi S&K ini; dan</li>
+                                        <li>User akan menggunakan layanan R1 untuk tujuan yang sah dan sesuai S&K ini serta peraturan perundang-undangan, kode, arahan, pedoman, kebijakan, dan aturan lain yang berlaku.</li>
+                                      </ol>
+                                    </li>
+                                    <li>
+                                      Lain-lain
+                                      <ol class="font-weight-normal">
+                                        <li>Kami berhak melakukan promosi kepada User, baik langsung maupun tidak langsung, termasuk juga pengiriman informasi produk, atau jasa, atau berita langsung ke User.</li>
+                                        <li>Kami berhak melakukan revisi, perubahan, penambahan, pengurangan, atau perbaikan terhadap S&K ini setiap waktu, tanpa pemberitahuan terlebih dahulu kepada User.</li>
+                                        <li>Dalam hal User berhenti menggunakan layanan R1, maka data informasi yang sudah diberikan oleh User kepada Kami akan tetap menjadi milik Kami.</li>
+                                      </ol>
+                                    </li>
+                                  </ol>
+                                </li>
+                              </ol>
+                              <hr/>
+                              <p>Terakhir kali diubah: 1 Februari 2022</p>
+                              <p>©PT Global Sukses Solusi Tbk</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4">
+                          <button class="btn btn-secondary" onclick="stepper.previous()">Previous</button>
+                        </div>
+                        <div class="col-lg-8 text-right">
+                          <span class="mr-3">By clicking "<strong>Register</strong>" you agree to our Term and Condition</span>
+                          <button class="btn btn-primary" onclick="stepper.next()">Register</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="finish-registration" class="content" role="tabpanel" aria-labelledby="finish-registration-trigger">
+                      <div class="row justify-content-center">
+                        <div class="col-lg-6">
+                          <div class="empty-state">
+                            <img class="" src="../dist/img/illustration/img-success-check.svg" width="80">
+                            <h4 class="mt-4">Please check your e-mail</h4>
+                            <p class="text-muted">Your're successfully registered at R1. Please check your registered email <strong>youremail@email.com</strong>, we send the R1 application installer and instructions how to using the R1 application to your email.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <section id="footer" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="../dist/img/logo-light.svg" alt="logo" class="brand-image mb-3" width="160">
+          <p class="text-white pr-1">RUN Market adalah lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+        <div class="col-lg-3">
+          <h5>Perusahaan</h5>
+          <p><a href="#">Tentang kami</a></p>
+          <p><a href="#">Kebijakan privasi</a></p>
+          <p><a href="#">Syarat dan ketentuan</a></p>
+          <p><a href="#">Karir</a></p>
+        </div>
+        <div class="col-lg-2">
+          <h5>Bantuan</h5>
+          <p><a href="#">Kontak</a></p>
+          <p><a href="#">Buku manual</a></p>
+        </div>
+        <div class="col-lg-3">
+          <h5>Alamat</h5>
+          <p class="font-weight-bold">Grha RUN System</p>
+          <p>Jl. Pakuningratan No.15, <br>
+              Cokrodiningratan, Jetis, Yogyakarta, <br>
+              55233
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Footer -->
+  <footer class="main-footer bg-grey-950" style="border-top:none;">
+    <div class="container text-white">
+      <!-- Copyright -->
+      <strong>Copyright &copy; 2021 <a href="#">RUN Market</a>.</strong> All rights reserved.
+    </div>
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="../plugins/jquery/jquery.min.js"></script>
+<!-- Select2 -->
+<script src="../plugins/select2/js/select2.full.min.js"></script>
+<!-- BS-Stepper -->
+<script src="../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+
+<!-- Page specific script -->
+<script>
+  $(function () {
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+    //Initialize Select2 Elements
+    $('.select2bs4').select2({
+      theme: 'bootstrap4'
+    })
+  })
+</script>
+
+<script type="text/javascript">
+    $('.select-role').click(function(){
+    $('.select-role').removeClass('selected');
+    $(this).addClass('selected');
+  });
+</script>
+
+<script type="text/javascript">
+  // BS-Stepper Init
+  document.addEventListener('DOMContentLoaded', function () {
+    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+  })
+</script>
+
+<!-- Bootstrap 4 -->
+<script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
